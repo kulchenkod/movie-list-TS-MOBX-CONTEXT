@@ -56,6 +56,10 @@ class CustomApp extends App {
           <Component {...pageProps} />
         </StoreContext.Provider>
         <style jsx global>{`
+          body {
+            margin: 0;
+            background-color: #abd2fd;
+          }
           #nprogress {
             pointer-events: none;
           }

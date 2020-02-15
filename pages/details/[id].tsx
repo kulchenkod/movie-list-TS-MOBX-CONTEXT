@@ -83,7 +83,7 @@ const Details = observer(() => {
       </div>
       <style jsx>{`
         .details {
-          height: calc(100vh - 16px);
+          height: 100%;
           background-image: url(${backdrop_path && process.env.IMG_URL_ORIGINAL}${backdrop_path});
           background-position: center;
           background-size: cover;
