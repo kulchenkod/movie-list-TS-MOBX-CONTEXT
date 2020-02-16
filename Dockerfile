@@ -16,4 +16,4 @@ EXPOSE 3000
 
 USER node
 
-CMD [ "pm2-runtime", "npm", "--", "start" ]
+CMD [ "pm2-runtime", "npm start", "ecosystem.config.js"]

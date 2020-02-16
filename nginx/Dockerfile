@@ -1,15 +1,14 @@
-# Base on offical NGINX Alpine image
-FROM nginx:alpine
+# Берём последний образ nginx
+FROM nginx:latest
 
-# Remove any existing config files
+# удаляем все конфиги в nginx
 RUN rm /etc/nginx/conf.d/*
 
-# Copy config files
-# *.conf files in conf.d/ dir get included in main config
+# Копируем наш дефолтный конфиг в nginx
 COPY ./default.conf /etc/nginx/conf.d/
 
-# Expose the listening port
+# Слушаем 80 порт
 EXPOSE 80
 
-# Launch NGINX
+# Запускаем nginx
 CMD [ "nginx", "-g", "daemon off;" ]
