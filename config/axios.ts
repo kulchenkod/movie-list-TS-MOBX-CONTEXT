@@ -7,7 +7,7 @@ axios.interceptors.request.use(config => {
     ...config,
     params: {
       ...config.params,
-      language: 'en-US',
+      language: 'ru-RU',
       api_key: process.env.API_KEY,
     },
   };
