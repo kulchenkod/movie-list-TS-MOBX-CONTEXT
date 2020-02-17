@@ -90,7 +90,7 @@ const Details = observer(() => {
           color: white;
         }
         .details__body {
-          height: 100%;
+          height: 100vh;
           background-color: rgba(0, 0, 0, 0.5);
         }
         .details__title {
